@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="intro">
+  <h1>{{ page.name }}</h1>
+  {{ content }}
+</div>
+
+<div class="profile">
+    <img style="max-width: 50%;" src="/assets/images/profile_photo.jpg">
+    <div style="font-size: 24px; font-weight: 800;">Mr. Anwar!</div>
+    <ul>
+        <li>无线电CQ玩家</li>
+        <li>吉他小白</li>
+        <li>AIOT探索者</li>
+    </ul>
+    <div>
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    </div>
+</div>
+
+<ul style="text-align: left;">
+  {% assign filtered_posts = site.posts | where: 'tag', page.name %}
+  {% for post in filtered_posts %}
+    <li><a  style="color: orange; text-decoration: underline;" href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

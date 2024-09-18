@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1 class="blog_header">{{ page.title }}</h1>
+
+<div class="blog_para">
+  {{ page.date | date_to_string }}
+  <!-- {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+    - <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %} -->
+</div>
+
+<div class="blog_content">
+  {{content | markdownify}}
+</div>
