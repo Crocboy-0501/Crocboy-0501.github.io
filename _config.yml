@@ -25,13 +25,13 @@ excerpt_separator: <!--more-->
 plugins:
   - "jekyll-feed"
 
-### site metadata ###
-title: My GitHub Projects
+# ### site metadata ###
+# title: My GitHub Projects
 
-repository: Crocboy-0501/Crocboy-0501.github.io
-author: Michael Currin
+# repository: Crocboy-0501/Crocboy-0501.github.io
+# author: Michael Currin
 
-### Build settings ###
+# ### Build settings ###
 
-url: https://crocboy-0501.github.io
-baseurl: ""
+# url: https://crocboy-0501.github.io
+# baseurl: ""
