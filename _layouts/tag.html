@@ -1,16 +1,24 @@
 ---
 layout: default
 ---
-<div class="intro">
-  <h1>{{ page.name }}</h1>
-  {{ content }}
-</div>
+{% if page.name == 'others' %}
+  <div class="tag_intro">
+    {{ content }}
+  </div>
+{% endif %}
 
-{% include profile.html %}
 
-<ul style="text-align: left;">
+<div style="text-align: left;">
   {% assign filtered_posts = site.posts | where: 'tag', page.name %}
   {% for post in filtered_posts %}
-    <li><a  style="color: orange; text-decoration: underline;" href="{{ post.url }}">{{ post.title }}</a></li>
+    <div>
+        <a  style="color: orange; text-decoration: underline; font-size: 24px;" href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    {% assign first_paragraph = post.content | markdownify | split: '<blockquote>' %}
+    {% assign second_paragraph = first_paragraph[1] | markdownify | split: '</p>' %}
+    <div style="font-size: 24px; line-height: 36px;">
+      {{ second_paragraph[0]}}
+    </div>
+      <!-- {{ post.content | markdownify }} -->
   {% endfor %}
-</ul>
+</div>

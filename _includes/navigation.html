@@ -1,8 +1,14 @@
-<div class="nav">
-    {% for item in site.data.navigation %}
-    <a href="{{item.link}}" {% if item.link == page.url %}style="color: red;"{% endif %}>
-        {{item.name}}
-      </a>
-    {% endfor %}
+<div class="header">
+    <a href="/index.html">Anwar's Blog</a>
+    <div>
+        <a href="https://github.com/Crocboy-0501" target="_blank">
+            <img src="/assets/images/github.svg">
+        </a>
+        <a href="" target="_blank">
+            <img src="/assets/images/telegram.svg">
+        </a>
+        <a href="/feed.xml" target="_blank">
+            <img src="/assets/images/rss.svg">
+        </a>
+    </div>
 </div>
-

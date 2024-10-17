@@ -1,4 +1,3 @@
 ---
-name: 随记
+name: notes
 ---
-日常记录

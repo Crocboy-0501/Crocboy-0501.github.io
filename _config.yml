@@ -25,13 +25,7 @@ excerpt_separator: <!--more-->
 plugins:
   - "jekyll-feed"
 
-### site metadata ###
-title: My GitHub Projects
 
-repository: Crocboy-0501/Crocboy-0501.github.io
-author: Michael Currin
 
-### Build settings ###
-
-url: https://crocboy-0501.github.io
+url: https://anwar.ink
 baseurl: ""

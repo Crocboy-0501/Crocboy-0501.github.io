@@ -1,6 +1,8 @@
-- name: 主页 HOME
-  link: /
-- name: 关于 ABOUT
-  link: /about.html
-- name: 订阅 RSS
-  link: /feed.xml
+# - name: 主页 HOME
+#   link: /
+# - name: 关于 ABOUT
+#   link: /about.html
+# - name: 订阅 RSS
+#   link: /feed.xml
+# - name: 测试
+#   link: /test.html
